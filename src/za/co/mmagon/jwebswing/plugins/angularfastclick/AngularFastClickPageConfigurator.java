@@ -51,9 +51,10 @@ public class AngularFastClickPageConfigurator extends PageConfigurator
 		{
 			JQueryPageConfigurator.setRequired(page.getBody(), true);
 			AngularPageConfigurator.setRequired(page.getBody(), true);
+
 			page.getAngular().getAngularModules().add(new AngularFastClickModule());
 
-			page.getBody().addJavaScriptReference(new JavascriptReference("FastClickReference", 4.003, "bower_components/ng-fastclick/dist/index.min.js", 11));
+			page.getBody().addJavaScriptReference(new JavascriptReference("FastClickReferenceJS", 4.003, "bower_components/ng-fastclick/dist/index.min.js", 11));
 		}
 		return page;
 	}
