@@ -49,8 +49,8 @@ public class AngularFastClickPageConfigurator extends PageConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
-			AngularPageConfigurator.setRequired(page.getBody(), true);
+			JQueryPageConfigurator.setRequired(true);
+			AngularPageConfigurator.setRequired(true);
 
 			page.getAngular().getAngularModules().add(new AngularFastClickModule());
 
