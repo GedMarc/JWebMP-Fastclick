@@ -1,12 +1,12 @@
-package za.co.mmagon.jwebswing.plugins.angularfastclick;
+package com.jwebmp.plugins.angularfastclick;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.base.angular.AngularPageConfigurator;
+import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * Allows for elements to have an auto expand by adding a class
@@ -26,12 +26,12 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-fastclick",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/FastClick.jar/download"
-)
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/FastClick.jar/download")
 @ComponentInformation(name = "Angular Auto Expand",
 		description = "Auto Expands Components with Angular",
 		url = "https://www.akveo.com/products.html")
-public class AngularFastClickPageConfigurator extends PageConfigurator
+public class AngularFastClickPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -52,9 +52,12 @@ public class AngularFastClickPageConfigurator extends PageConfigurator
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
 
-			page.getAngular().getAngularModules().add(new AngularFastClickModule());
+			page.getAngular()
+			    .getAngularModules()
+			    .add(new AngularFastClickModule());
 
-			page.getBody().addJavaScriptReference(new JavascriptReference("FastClickReferenceJS", 4.003, "bower_components/ng-fastclick/dist/index.min.js", 11));
+			page.getBody()
+			    .addJavaScriptReference(new JavascriptReference("FastClickReferenceJS", 4.003, "bower_components/ng-fastclick/dist/index.min.js", 11));
 		}
 		return page;
 	}
