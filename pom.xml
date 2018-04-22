@@ -145,13 +145,7 @@
             <version>${project.version}</version>
             <type>jar</type>
         </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>jwebmp-core</artifactId>
-            <version>${project.version}</version>
-            <scope>test</scope>
-            <type>test-jar</type>
-        </dependency>
+
 
     </dependencies>
     <distributionManagement>
