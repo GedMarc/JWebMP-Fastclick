@@ -36,7 +36,7 @@ class AngularFastClickModule
 	 */
 	public AngularFastClickModule()
 	{
-		super("AngularFastClickModule");
+		super("ng-fastclick");
 	}
 
 	@Override
