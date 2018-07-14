@@ -25,7 +25,7 @@ import com.jwebmp.base.angular.modules.AngularModuleBase;
  * @author Marc Magon
  * @since 30 May 2017
  */
-class AngularFastClickModule
+public class AngularFastClickModule
 		extends AngularModuleBase
 {
 
