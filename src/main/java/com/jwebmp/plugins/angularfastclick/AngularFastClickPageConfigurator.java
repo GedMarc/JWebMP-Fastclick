@@ -1,12 +1,12 @@
 package com.jwebmp.plugins.angularfastclick;
 
-import com.jwebmp.Page;
-import com.jwebmp.PageConfigurator;
-import com.jwebmp.base.angular.AngularPageConfigurator;
-import com.jwebmp.base.references.JavascriptReference;
-import com.jwebmp.plugins.ComponentInformation;
-import com.jwebmp.plugins.PluginInformation;
-import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.PageConfigurator;
+import com.jwebmp.core.base.angular.AngularPageConfigurator;
+import com.jwebmp.core.base.references.JavascriptReference;
+import com.jwebmp.core.plugins.ComponentInformation;
+import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * Allows for elements to have an auto expand by adding a class

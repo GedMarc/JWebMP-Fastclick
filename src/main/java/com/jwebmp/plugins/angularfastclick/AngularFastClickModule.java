@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.angularfastclick;
 
-import com.jwebmp.base.angular.modules.AngularModuleBase;
+import com.jwebmp.core.base.angular.modules.AngularModuleBase;
 
 /**
  * The Angular Auto Expand Directive that is applied
