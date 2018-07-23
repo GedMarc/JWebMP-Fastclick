@@ -1,12 +1,12 @@
 package com.jwebmp.plugins.angularfastclick;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.base.references.JavascriptReference;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * Allows for elements to have an auto expand by adding a class
@@ -31,11 +31,8 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		description = "Auto Expands Components with Angular",
 		url = "https://www.akveo.com/products.html")
 public class AngularFastClickPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new AngularAutoExpandPageConfigurator
 	 */
@@ -51,11 +48,6 @@ public class AngularFastClickPageConfigurator
 		{
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
-
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new AngularFastClickModule());
-
 			page.getBody()
 			    .addJavaScriptReference(new JavascriptReference("FastClickReferenceJS", 4.003, "bower_components/ng-fastclick/dist/index.min.js", 11));
 		}
