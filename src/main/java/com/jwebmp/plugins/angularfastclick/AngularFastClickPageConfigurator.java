@@ -23,8 +23,8 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,fast click,ui,web ui, framework",
 		pluginSubtitle = "Fast Click Components with Angular",
 		pluginSourceUrl = "https://www.npmjs.com/package/angular-fastclick",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Fastclick/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Fastclick",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Fastclick/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Fastclick",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-fastclick",
@@ -33,7 +33,7 @@ import javax.validation.constraints.NotNull;
 		description = "Auto Expands Components with Angular",
 		url = "https://www.akveo.com/products.html")
 public class AngularFastClickPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularFastClickPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
