@@ -31,7 +31,6 @@ public class AngularFastClickModule
 		implements IAngularModule<AngularFastClickModule>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularAutoExpandDirective
