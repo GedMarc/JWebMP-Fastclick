@@ -18,7 +18,6 @@
 package com.jwebmp.plugins.angularfastclick;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
-import com.jwebmp.core.base.angular.services.IAngularModule;
 
 /**
  * The Angular Auto Expand Directive that is applied
@@ -27,11 +26,8 @@ import com.jwebmp.core.base.angular.services.IAngularModule;
  * @since 30 May 2017
  */
 public class AngularFastClickModule
-		extends AngularModuleBase
-		implements IAngularModule<AngularFastClickModule>
+		extends AngularModuleBase<AngularFastClickModule>
 {
-
-
 	/*
 	 * Constructs a new AngularAutoExpandDirective
 	 */
