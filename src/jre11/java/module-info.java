@@ -1,11 +1,3 @@
-import com.jwebmp.core.base.angular.services.IAngularModule;
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.angularfastclick.AngularFastClickModule;
-import com.jwebmp.plugins.angularfastclick.AngularFastClickPageConfigurator;
-import com.jwebmp.plugins.angularfastclick.implementations.AngularFastClickExclusionsModule;
-
 module com.jwebmp.plugins.angularfastclick {
 	exports com.jwebmp.plugins.angularfastclick;
 
@@ -18,10 +10,10 @@ module com.jwebmp.plugins.angularfastclick {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides IPageConfigurator with AngularFastClickPageConfigurator;
-	provides IAngularModule with AngularFastClickModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularfastclick.AngularFastClickPageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularfastclick.AngularFastClickModule;
 
-	provides IGuiceScanJarExclusions with AngularFastClickExclusionsModule;
-	provides IGuiceScanModuleExclusions with AngularFastClickExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularfastclick.implementations.AngularFastClickExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularfastclick.implementations.AngularFastClickExclusionsModule;
 
 }
