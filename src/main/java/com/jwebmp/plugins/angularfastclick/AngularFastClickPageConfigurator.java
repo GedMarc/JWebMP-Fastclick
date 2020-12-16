@@ -5,6 +5,7 @@ import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.base.references.JavascriptReference;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -28,9 +29,14 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-fastclick",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/FastClick.jar/download")
-@ComponentInformation(name = "Angular Auto Expand",
-		description = "Auto Expands Components with Angular",
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.javascript/jwebmp-fastclick",
+		pluginModuleName = "com.jwebmp.plugins.angularfastclick",
+		pluginGroupId = "com.jwebmp.plugins.javascript",
+		pluginArtifactId = "jwebmp-fastclick",
+		pluginStatus = PluginStatus.Released
+)
+@ComponentInformation(name = "Angular Fast Click",
+		description = "Provides touch sensitive clicks for mobile devices",
 		url = "https://www.akveo.com/products.html")
 public class AngularFastClickPageConfigurator
 		implements IPageConfigurator<AngularFastClickPageConfigurator>
@@ -75,7 +81,7 @@ public class AngularFastClickPageConfigurator
 
 	@NotNull
 	@Override
-	public Page configure(Page page)
+	public Page<?> configure(Page<?> page)
 	{
 		if (!page.isConfigured() && enabled())
 		{

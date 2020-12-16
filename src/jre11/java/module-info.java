@@ -1,3 +1,5 @@
+import com.jwebmp.plugins.angularfastclick.implementations.AngularFastClickModuleInclusion;
+
 module com.jwebmp.plugins.angularfastclick {
 	exports com.jwebmp.plugins.angularfastclick;
 
@@ -13,5 +15,6 @@ module com.jwebmp.plugins.angularfastclick {
 	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularfastclick.AngularFastClickModule;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularfastclick.implementations.AngularFastClickExclusionsModule;
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions with AngularFastClickModuleInclusion;
 
 }
