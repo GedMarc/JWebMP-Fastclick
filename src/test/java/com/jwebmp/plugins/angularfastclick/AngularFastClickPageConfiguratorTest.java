@@ -25,7 +25,7 @@ public class AngularFastClickPageConfiguratorTest
 	@Test
 	public void testFastClickImplementation()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		System.out.println(p.toString(0));
 	}
 }
