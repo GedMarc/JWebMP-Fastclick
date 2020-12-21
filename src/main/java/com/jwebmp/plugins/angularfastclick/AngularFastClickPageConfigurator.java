@@ -17,9 +17,9 @@ import jakarta.validation.constraints.NotNull;
  * @author GedMarc
  * @since 16 Jun 2017
  */
-@PluginInformation(pluginName = "Angular Fast Click",
+@PluginInformation(pluginName = "Fast Click",
 		pluginDescription = "Auto Fast Click to override the 300ms delay",
-		pluginUniqueName = "jwebswing-angular-fastclick",
+		pluginUniqueName = "angular-fastclick",
 		pluginVersion = "1.0.0",
 		pluginCategories = "angular,fast click,ui,web ui, framework",
 		pluginSubtitle = "Fast Click Components with Angular",
@@ -30,7 +30,7 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-fastclick",
 		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.javascript/jwebmp-fastclick",
-		pluginModuleName = "com.jwebmp.plugins.angularfastclick",
+		pluginModuleName = "https://www.npmjs.com/package/angular-fastclick",
 		pluginGroupId = "com.jwebmp.plugins.javascript",
 		pluginArtifactId = "jwebmp-fastclick",
 		pluginStatus = PluginStatus.Released
