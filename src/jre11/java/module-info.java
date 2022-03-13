@@ -9,7 +9,7 @@ module com.jwebmp.plugins.angularfastclick {
 	requires jakarta.validation;
 	requires java.logging;
 	requires com.guicedee.guicedinjection;
-	requires com.jwebmp.core.angularjs;
+	requires com.jwebmp.core.angular;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularfastclick.AngularFastClickPageConfigurator;
 	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularfastclick.AngularFastClickModule;
